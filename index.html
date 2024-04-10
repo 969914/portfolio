@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>sayali's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="#style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> sayali's portfollio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#firstSection">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi There, I am <span class="pink">sayali.</span>
+                <div> I am </div>
+                <span id="element"></span>
+                <button class="btn"><a href="cv.pdf">Download Resume</a> </button>
+            </div>
+            <div class="rightSection">
+                <img src="dp.png" alt="portfollio">
+            </div>
+        </section>
+        <hr>
+        <section id="About">
+            <div class="abt">
+                <h1>About</h1>
+
+                <div class="info">
+                    <p><span>
+                            <b>Hello !!! My Name Is Sayali Dipak Ugalmugale</b>.I am a curruntly pursuing the degree of
+                            computer engineering
+                            from K.K.Wagh college of engineering education and research ,Nashik.Next to my previous
+                            education, I have completed my ssc /10th from M.V.M Dongargaon with
+                            92.60%. And 11th, 12th from K.B.Patil college,Vinchur with 76.67%. And my current GPA is
+                            8.67.
+                    </p>
+                    <p> During my academic journey, I dedicated myself to mastering the fundamentals of web development.
+                        I
+                        have a basic understanding of HTML,
+                        CSS, and JavaScript. And I have done certification in NPTEL certification in problem solving in
+                        Modern CPP.</p>
+                    <p> My short-term goal is to improve my skills.My long-term goal is to achieve a higher position in
+                        my
+                        field of work and become a valuable
+                        part of the organization.</span></p>
+                </div>
+        </section>
+        <hr>
+
+
+        <section id="project">
+            <h1>Project</h1>
+            <div class="pro">
+                <div class="pjt">
+                    <h3>Masterings In placement Preparation</h3>
+
+                    <p>Mastering in Placement Preparation" is a comprehensive project aimed at providing aspiring
+                        candidates with the tools and resources needed to in job placement processes, particularly
+                        in the tech industry. The project includes features such as interview
+                        tips, resume building guides and usefull platform ,company-specific preparation materials, mock
+                        interview Question,curated learning resources. The goal is to empower individuals to navigate
+                        the
+                        competitive job market with confidence and success.</p>
+                    <br>
+
+                </div>
+                <div class="proimg"><img src="pro.jpg" alt="information image"></div>
+            </div>
+        </section>
+        <hr>
+        <section id="contact">
+            <h1>contact Me</h1>
+            <div class="cnt">
+                <h3><span> If you want to contact me then fill the contact form given below:</span> </h3>
+                <br>
+
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <br>
+                    <br>
+                    <button class="sub" type="submit">Submit</button>
+                </form>
+
+            </div><br>
+            <div class="icon">
+
+            </div>
+        </section>
+        <hr>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Computer Engineer', 'web developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <footer>
+        <div class="ftr"><br>
+            <p> copyright &copy; sayalisportfolio.com | All rights reserved</p>
+            <div class="icon">
+                <br>
+                <a href="mailto:sayaliugalmugale09@gmail.com"><img src="iconsgmail.png" alt="gmail"></a>
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"> <img
+                        src="iconlinkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/dashboard"> <img src="githubico.png" alt="github"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

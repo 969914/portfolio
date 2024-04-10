@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(3, 8, 58);
+    color: white;
+    text-decoration: none;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(3, 3, 83);
+    color: white;
+}
+
+
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+header nav ul li {
+    list-style: none;
+    margin: 0 43px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a:hover {
+    color: purple;
+    font: size 0.001em;
+}
+
+header .left{
+    font-size: 1.5rem;
+    margin-left: 20px;
+    /* Hide the Netflix icon from the title */
+    background-image: none !important;
+
+}
+.left {
+    font-size: 1.5rem;
+        margin-left: 20px;
+    }
+
+
+
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 0px;
+}
+
+.firstSection>div {
+    width: 35%;
+}
+
+.leftSection {
+    font-size: 2.9rem;
+    text-align: center;
+    padding: 10px;
+    margin: 17px;
+
+}
+
+.rightSection {
+    width: 80%;
+    margin: 43px 0;
+}
+
+.rightSection img {
+    width: 88%;
+    margin-left: 50px;
+}
+
+.pink {
+    color: purple;
+}
+
+#element {
+    color: purple;
+}
+
+.leftSection .btn {
+
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    margin: 90px;
+
+}
+
+.leftSection .btn a {
+    text-decoration: none;
+    color: white;
+}
+
+#About {
+    height: 500px;
+    width: 100%;
+    padding-top: 50px;
+
+}
+.abt{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+#project {
+    height: 500px;
+    width: 100%;
+    padding-top: 50px;
+
+}
+
+.pro {
+    display: flex;
+    margin: 20px;
+  padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pro .proimg img {
+    height: 300px;
+    width: 300px;
+    padding-top: 20px;
+}
+
+#contact {
+    text-align: center;
+    height: 500px;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.info {
+    margin: 20px;
+    padding-top: 0px;
+    border: 0;
+    font-size: 100%;
+    vertical-align: text-bottom;
+    text-size-adjust: auto;
+    letter-spacing: 0.015rem;
+    line-height: 2.50;
+
+}
+
+h1 {
+    color: #FFB000;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #FFB000;
+}
+
+.pjt {
+    margin: 10px;
+    padding-top: 20px;
+    text-size-adjust: auto;
+    letter-spacing: 0.015rem;
+    line-height: 2.50;
+}
+
+.cnt {
+    margin: 20px;
+    padding-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+
+.cnt form .sub {
+    background: #1e2167;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+footer {
+    height: 40px;
+
+}
+
+.ftr {
+    text-align: center;
+    color: gray;
+    padding-top: 20px;
+}
+
+
+footer .icon img {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
