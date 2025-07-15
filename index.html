@@ -13,15 +13,28 @@
 </head>
 
 <body>
+
     <header>
-        <nav>
-            <div class="left"> sayali's portfollio</div>
+        <nav class="navbar">
+            <div class="left">
+                <img src="img/profile.jpeg" alt="sayali's photo" id="profilePic" class="img">
+                <div id="imageModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="fullImage">
+                </div>
+                <h4>Sayali's Portfolio</h4>
+            </div>
             <div class="right">
                 <ul>
                     <li><a href="#firstSection">Home</a></li>
-                    <li><a href="#About">About</a></li>
+                    <li><a href="#education">Education</a></li>
                     <li><a href="#project">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
                     <li><a href="#contact">Contact Me</a></li>
+
+                    <button class="toggle-btn" onclick="toggleMode()">🌙 Dark/Light</button>
                 </ul>
             </div>
         </nav>
@@ -29,109 +42,198 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi There, I am <span class="pink">sayali.</span>
-                <div> I am </div>
-                <span id="element"></span>
-                <button class="btn"><a href="cv.pdf">Download Resume</a> </button>
+                <p>Hi There, I am <span class="pink">sayali.</span></p>
+                <span id="element"></span><br>
+                <br>
+                <h5><i>I am like moldable clay — adaptable, flexible, and eager to grow with every new experience. I am always open to learning and evolving.</I></h5>
+                <div class="icon">
+                <br>
+                <a href="mailto:sayaliugalmugale09@gmail.com"><img src="img/iconsgmail.png" alt="gmail"></a>
+                <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"> <img
+                        src="img/iconlinkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/dashboard"> <img src="img/githubico.png" alt="github"></a>
+            </div>    <button class="btn"><a href="img/Sayalli_Ugalmugale_Resume.pdf">Download Resume</a> </button>
             </div>
-            <div class="rightSection">
-                <img src="dp.png" alt="portfollio">
+            <img src="img/background.jpg" alt="background" class="background">
+
+        </section>
+        
+<hr>
+        <section id="education" class="section-container">
+            <h2>Education</h2>
+
+            <div class="education-item">
+                <h3>Bachelor of Technology in Computer Engineering</h3>
+                <p><strong>K.K. Wagh Institute of Engineering Education and Research, Nashik</strong></p>
+                <p> Graduation: May 2026</p>
+            </div>
+
+            <div class="education-item">
+                <h3>Higher Secondary Education (Class 12<sup>th</sup>)</h3>
+                <p><strong>K.B.P. Vidyalaya and Arts and Science Junior College, Vinchur</strong></p>
+                <p>Stream: Science | Year of Completion: 2022</p>
+            </div>
+
+            <div class="education-item">
+                <h3>Secondary Education (Class 10<sup>th</sup>)</h3>
+                <p><strong>Madyamik Vidyamandir Dongargaon, Nashik</strong></p>
+                <p>Year of Completion: 2020</p>
             </div>
         </section>
-        <hr>
-        <section id="About">
-            <div class="abt">
-                <h1>About</h1>
 
-                <div class="info">
-                    <p><span>
-                            <b>Hello !!! My Name Is Sayali Dipak Ugalmugale</b>.I am a curruntly pursuing the degree of
-                            computer engineering
-                            from K.K.Wagh college of engineering education and research ,Nashik.Next to my previous
-                            education, I have completed my ssc /10th from M.V.M Dongargaon with
-                            92.60%. And 11th, 12th from K.B.Patil college,Vinchur with 76.67%. And my current GPA is
-                            8.67.
-                    </p>
-                    <p> During my academic journey, I dedicated myself to mastering the fundamentals of web development.
-                        I
-                        have a basic understanding of HTML,
-                        CSS, and JavaScript. And I have done certification in NPTEL certification in problem solving in
-                        Modern CPP.</p>
-                    <p> My short-term goal is to improve my skills.My long-term goal is to achieve a higher position in
-                        my
-                        field of work and become a valuable
-                        part of the organization.</span></p>
-                </div>
         </section>
         <hr>
 
 
         <section id="project">
-            <h1>Project</h1>
-            <div class="pro">
-                <div class="pjt">
-                    <h3>Masterings In placement Preparation</h3>
+            <h2>Project</h2>
+            <br>
+            <div class="project-container">
 
-                    <p>Mastering in Placement Preparation" is a comprehensive project aimed at providing aspiring
-                        candidates with the tools and resources needed to in job placement processes, particularly
-                        in the tech industry. The project includes features such as interview
-                        tips, resume building guides and usefull platform ,company-specific preparation materials, mock
-                        interview Question,curated learning resources. The goal is to empower individuals to navigate
-                        the
-                        competitive job market with confidence and success.</p>
-                    <br>
-
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>Farmer Community</h3>
+                        <p><strong>HTML, CSS, JavaScript ,</strong></p>
+                        <p>A web platform that connects local farmers with buyers and agricultural experts, promoting
+                            sustainable farming and better market access.</p>
+                        <a href="https://github.com/969914/Farmer_Community" target="_blank" class="btn-link">View on
+                            GitHub</a>
+                    </div>
                 </div>
-                <div class="proimg"><img src="pro.jpg" alt="information image"></div>
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>HotelHunt App</h3>
+                        <p><strong>React Native, TypeScript, Firebase, Node.js, MongoDB</strong></p>
+                        <p>Developed a cross-platform hotel booking app with AI-driven recommendations, real-time
+                            updates, smart filters, and document verification, featuring a modern UI with dark/light
+                            mode and optimized performance.</p>
+                        <a href="https://github.com/969914/HotelHunt" target="_blank" class="btn-link">View on
+                            GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-content">
+                        <h3>AI Classroom Monitor</h3>
+                        <p><strong>React-based</strong></p>
+                        <p>Develop an AI-driven system to monitor classroom sessions, evaluate training effectiveness,
+                            assess curriculum relevance, and highlight underperforming institutes — all visualized
+                            through an intelligent dashboard.</p>
+                        <a href="https://github.com/969914/AI-ML-project-Institute-analysis" target="_blank"
+                            class="btn-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+        <section id="skills" data-aos="fade-left">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Languages</h3>
+                    <p>C, C++, Python, JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>HTML, CSS, React</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <p>SQL, MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>VS Code, GitHub, PowerPoint</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <p>Teamwork, Communication, Time Management,Helpfull,Kind</p>
+                </div>
             </div>
         </section>
         <hr>
+        <section id="certifications" data-aos="zoom-in">
+            <h2>Certifications</h2>
+            <div class="cert-container">
+                <div class="cert-card">
+                    <h3>Modern C++</h3>
+                    <p>NPTEL – IIT Kharagpur</p>
+                </div>
+                <div class="cert-card">
+                    <h3>DAA</h3>
+                    <p>NPTEL – IIT Madras</p>
+                </div>
+                <div class="cert-card">
+                    <h3>DBMS</h3>
+                    <p>NPTEL – IIT Kharagpur</p>
+                </div>
+                <div class="cert-card">
+                    <h3>AWS Cloud</h3>
+                    <p>AWS Academy Foundations</p>
+                </div>
+            </div>
+        </section>
+        <hr />
+        <!-- Achievements -->
+        <section id="achievements" data-aos="flip-left">
+            <h2>Achievements</h2>
+            <div class="achievements-container">
+                <div class="achievement-card">
+                    <h3>🏆 Smart India Hackathon</h3>
+                    <p>Winner – NIT Srinagar (2024)</p>
+                    <p></p>
+                </div>
+                <div class="achievement-card">
+                    <h3>💡 DBMS Project Competition</h3>
+                    <p>Winner – KKWIEER (2024)</p>
+                </div>
+            </div>
+        </section>
+        <hr />
         <section id="contact">
-            <h1>contact Me</h1>
+            <h2>Contact Me</h2>
+            <br>
             <div class="cnt">
                 <h3><span> If you want to contact me then fill the contact form given below:</span> </h3>
                 <br>
 
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name">
-                    <br>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email">
-                    <br>
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message"></textarea>
-                    <br>
-                    <br>
+                <form id="contactForm" class="contact-form" action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+
                     <button class="sub" type="submit">Submit</button>
                 </form>
 
             </div><br>
-            <div class="icon">
-
-            </div>
         </section>
         <hr>
     </main>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Computer Engineer', 'web developer'],
-            typeSpeed: 50,
-        });
-    </script>
     <footer>
-        <div class="ftr"><br>
+        <div class="ftr">
             <p> copyright &copy; sayalisportfolio.com | All rights reserved</p>
             <div class="icon">
                 <br>
-                <a href="mailto:sayaliugalmugale09@gmail.com"><img src="iconsgmail.png" alt="gmail"></a>
+                <a href="mailto:sayaliugalmugale09@gmail.com"><img src="img/iconsgmail.png" alt="gmail"></a>
                 <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit"> <img
-                        src="iconlinkedin.png" alt="linkedin"></a>
-                <a href="https://github.com/dashboard"> <img src="githubico.png" alt="github"></a>
+                        src="img/iconlinkedin.png" alt="linkedin"></a>
+                <a href="https://github.com/dashboard"> <img src="img/githubico.png" alt="github"></a>
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
