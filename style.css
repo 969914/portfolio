@@ -525,87 +525,86 @@ footer .icon img {
   width: 50px;
   background-color: var(--footer-color);
   padding: 10px;
-}@media (max-width: 992px) {
+}/* === MOBILE RESPONSIVE STYLES ONLY === */
+@media (max-width: 992px) {
   .hamburger {
     display: block;
-    font-size: 2rem;
     cursor: pointer;
+    font-size: 2rem;
     color: var(--text-color);
-    margin-left: auto;
-    padding: 10px;
   }
 
   .nav-links {
     display: none;
+    flex-direction: column;
     position: absolute;
-    left: 5%;
-    top: 100px;
-    right: 5%;
-    width: 220px;
+    top: 60px;
+    right: 10px;
     background-color: var(--header-color);
+    padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
   }
 
   .nav-links.show {
-    display: block;
+    display: flex;
   }
 
   .nav-links ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
   }
 
   .nav-links ul li {
-    margin: 5px 0;
-    text-align: right;
+    padding: 10px;
+    text-align: left;
   }
 
-  .toggle-btn {
-    display: block;
-    margin: 10px 0 0 auto;
-    text-align: right;
-  }
-
-  .navbar {
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .firstSection {
-    flex-direction: column;
+  .firstSection h1,
+  .firstSection p {
+    word-break: break-word;
+    white-space: normal;
     text-align: center;
-    padding: 20px;
+    padding: 0 10px;
   }
 
-  .firstSection > div {
-    width: 100% !important;
+  .leftSection .icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
   }
 
-  .leftSection {
-    font-size: 2rem;
-  }
-
-  .leftSection .icon .btn {
+  .leftSection .btn {
     margin: 10px auto;
     display: block;
   }
-}
 
-@media (max-width: 480px) {
-  .leftSection {
-    font-size: 1.8rem;
+  .edu-card {
+    padding: 10px;
+    margin: 10px auto;
+    width: 90%;
+    font-size: 0.95rem;
   }
 
-  .btn-link, .leftSection .icon .btn {
-    font-size: 14px;
-    padding: 8px 12px;
+  .edu-card h3 {
+    font-size: 1rem;
+  }
+
+  .edu-card p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 768px) {
+  .firstSection {
+    background-image: url("img/background.jpg"); /* Use mobile-optimized image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    filter: brightness(0.7); /* Slight darkening for better text readability */
   }
 }
