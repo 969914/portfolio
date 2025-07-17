@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Typed.js Init
   new Typed('#element', {
-    strings: ['Frontend Developer', 'CSE Student'],
+    strings: ['Frontend Developer', 'Computer Engineering Student'],
     typeSpeed: 50,
     backSpeed: 25,
     loop: true
@@ -70,3 +70,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
   this.reset(); // Optional: clear the form after saving
 
 });
+ function toggleNavbar() {
+    const nav = document.getElementById("navLinks");
+    nav.classList.toggle("show");
+  }
